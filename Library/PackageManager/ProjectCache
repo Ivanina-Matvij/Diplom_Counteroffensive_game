@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638391731268717261
-    m_Hash: 1525443029
+      ticks: 638377273368512836
+    m_Hash: 1164529822
   m_LockFileStatus:
     m_FilePath: C:/Users/User.DESKTOP-2G35HRI/Documents/Counteroffensive_game(or)/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638391731268717261
-    m_Hash: 683342763
+      ticks: 638377274238572150
+    m_Hash: 1381362156
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
