@@ -1,30 +1,29 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    void Update()
+    [SerializeField] private GameObject _bulletPrafab;
+    [SerializeField] private Transform _gunPointer;
+    [SerializeField] private float  bulletSpeed;
+    [SerializeField] private float Delay;
+    private Coroutine _fireRoutine;
+
+    public void FireTank()
     {
-        // Перевіряємо, чи натиснута кнопка "Space"
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            // Створюємо луч, починаючи з позиції цього об'єкта та в напрямку вперед
-            Ray ray = new Ray(transform.position, transform.forward);
+        if (_fireRoutine != null)
+            return;
 
-            // Визначаємо дальність луча (можна регулювати за потребою)
-            float rayDistance = 10f;
+        var bullet = Instantiate(_bulletPrafab, _gunPointer.position, Quaternion.identity);
+        var bulletRigidbody = bullet.GetComponent<Rigidbody>();
+        bulletRigidbody.velocity = _gunPointer.forward * bulletSpeed;
+        _fireRoutine = StartCoroutine(FireDelay());
+    }
 
-            // Перевіряємо чи є зіткнення луча з колайдерами
-            if (Physics.Raycast(ray, out RaycastHit hit, rayDistance))
-            {
-                // Отримуємо групу об'єктів, яка була влучена лучем
-                GameObject hitObject = hit.collider.gameObject;
-
-                // Знищуємо цей об'єкт
-                Destroy(hitObject);
-
-                // Можна вивести інформацію про зіткнення у консоль (для налагодження)
-                Debug.Log($"Зіткнення з {hitObject.name}!");
-            }
-        }
+    private IEnumerator FireDelay()
+    {
+        yield return new WaitForSeconds(Delay);
+        _fireRoutine = null;
     }
 }

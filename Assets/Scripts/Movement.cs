@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 
     public float rotationSpeed = 50f;
     private Vector3 previousPosition;
+    public Vector2 Direction { get; set; }
 
     private void MoveObject()
     {
@@ -29,7 +30,8 @@ public class Movement : MonoBehaviour
 
         if (horizontalInput != 0)
         {
-            Rotate((int)Mathf.Sign(horizontalInput));
+            Rotate((float)Mathf.Sign(horizontalInput));
+            
         }
     }
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class Movement : MonoBehaviour
         MoveObject();
     }
 
-    void Rotate(int direction)
+    void Rotate(float direction)
     {
         float rotation = direction * rotationSpeed * Time.deltaTime;
         transform.Rotate(Vector3.up, rotation);

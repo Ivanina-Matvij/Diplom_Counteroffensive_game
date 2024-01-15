@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7124dba055cafec4b879709dc7b49ceb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -167,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7124dba055cafec4b879709dc7b49ceb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,7 +223,6 @@ GameObject:
   - component: {fileID: 3884706442019725531}
   - component: {fileID: 6268311301007691435}
   - component: {fileID: 4550431397059805573}
-  - component: {fileID: 7865417819012407725}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -275,7 +274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7124dba055cafec4b879709dc7b49ceb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -331,19 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 4076523552283245818}
---- !u!114 &7865417819012407725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5271765659796262635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23da369460f938c44a3dff3515618533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gunPointer: {fileID: 8116700465910221367}
 --- !u!1 &6748186918415314855
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +389,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
@@ -426,8 +412,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 1, z: 2.74}
-  m_Center: {x: 0, y: -1.79, z: 0}
+  m_Size: {x: 1.6, y: 1.4, z: 2.6}
+  m_Center: {x: 0, y: -1.53, z: 0}
 --- !u!114 &6491255416017487296
 MonoBehaviour:
   m_ObjectHideFlags: 0
