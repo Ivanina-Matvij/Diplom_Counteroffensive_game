@@ -8,7 +8,8 @@ public class EnemyRotator: MonoBehaviour
 
     private void Start()
     {
-        _target = GameObject.FindWithTag("Player").transform;
+        if (player != null)
+            _target = GameObject.FindWithTag("Player").transform;
     }
 
     private void Update()
@@ -18,13 +19,14 @@ public class EnemyRotator: MonoBehaviour
 
     private void RotateTowardsPlayer()
     {
-        if (player != null)
+        if (_target != null)
         {
             Vector3 directionToPlayer = _target.position - transform.position;
             float angle = Mathf.Atan2(directionToPlayer.x, directionToPlayer.z) * Mathf.Rad2Deg;
-
             Quaternion rotation = Quaternion.Euler(0, angle, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
         }
+
+        
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private Fire _fire;
+    [SerializeField] private PlayerFire _fire;
     void Update()
     {
         if(Input.GetMouseButton(0))

@@ -63,10 +63,12 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Damage.cs" />
+    <Compile Include="Assets\Scripts\EnemyFire.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\PlayerFire.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\Fire.cs" />
+    <Compile Include="Assets\Scripts\EnemyInput.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
   </ItemGroup>
   <ItemGroup>
