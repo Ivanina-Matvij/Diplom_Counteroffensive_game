@@ -540,6 +540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3866733543781181121, guid: 3b96e982d58789948953729b2fb8e85d, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4349550276424049650, guid: 3b96e982d58789948953729b2fb8e85d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3707962
@@ -601,6 +605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6491255416017487296, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6748186918415314855, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
       propertyPath: m_Name
       value: Palyer
@@ -623,7 +631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9006627121210977051, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -21.49
       objectReference: {fileID: 0}
     - target: {fileID: 9006627121210977051, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
       propertyPath: m_LocalRotation.w
@@ -758,6 +766,26 @@ PrefabInstance:
     - target: {fileID: 3116089579035084545, guid: b8ea7a89669afb343940d175481bade7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224159471222110232, guid: b8ea7a89669afb343940d175481bade7, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224159471222110232, guid: b8ea7a89669afb343940d175481bade7, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1641207039}
+    - target: {fileID: 6224159471222110232, guid: b8ea7a89669afb343940d175481bade7, type: 3}
+      propertyPath: _retreatDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224159471222110232, guid: b8ea7a89669afb343940d175481bade7, type: 3}
+      propertyPath: _stopingDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224159471222110232, guid: b8ea7a89669afb343940d175481bade7, type: 3}
+      propertyPath: _stoppingDistance
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6378015763644158585, guid: b8ea7a89669afb343940d175481bade7, type: 3}
       propertyPath: m_LocalPosition.x

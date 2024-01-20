@@ -5,9 +5,16 @@ using UnityEngine;
 public class EnemyInput : MonoBehaviour
 {
     [SerializeField] private EnemyFire _fire;
-    void Update()
-    {
-        _fire.FireTank();
-    }
+    [SerializeField] private Enemy _enemy;
 
+    private void Update()
+    {
+        if (_enemy != null && _enemy.StoppingDistance > 0f)
+        {
+            if (_enemy.StoppingDistance == this._enemy.StoppingDistance)
+            {
+                _fire.FireTank();
+            }
+        }
+    }
 }

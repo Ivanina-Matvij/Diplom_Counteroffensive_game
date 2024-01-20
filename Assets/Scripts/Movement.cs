@@ -9,7 +9,6 @@ public class Movement : MonoBehaviour
 
     public float rotationSpeed = 50f;
     private Vector3 previousPosition;
-    public Vector2 Direction { get; set; }
 
     private void MoveObject()
     {

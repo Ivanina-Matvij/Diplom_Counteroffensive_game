@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fire: {fileID: 5587521413972064751}
+  _enemy: {fileID: 6224159471222110232}
 --- !u!1 &2092832144809831280
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +148,7 @@ GameObject:
   - component: {fileID: 3116089579035084545}
   - component: {fileID: 1742999264931066257}
   - component: {fileID: 1246977560803988682}
+  - component: {fileID: 6224159471222110232}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -219,6 +221,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1, z: 2.74}
   m_Center: {x: 0, y: -1.43, z: 0}
+--- !u!114 &6224159471222110232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092832144809831280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd24da207e291b34396b985eaedbcf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gunPointer: {fileID: 5313792380164809047}
+  _player: {fileID: 9006627121210977051, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
+  _stoppingDistance: 10
+  _retreatDistance: 10
+  speed: 5
 --- !u!1 &2882767068687521641
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,3 +495,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 9006627121210977051, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
+  rotationSpeed: 5
