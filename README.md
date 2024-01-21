@@ -1,1 +1,3 @@
-# Counteroffensive game
+# Diplom_Counteroffensive game
+
+Кваліфікаційна робота на підтвердження ступеня фахового молодшого бакалавра (ВСП «ППФК НТУ «ХПІ»)
