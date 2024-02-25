@@ -15,11 +15,9 @@ public class Damage : MonoBehaviour
                 Destroy(collision.collider.gameObject);
                 Destroy(gameObject);
             }
-            if(collision.gameObject.CompareTag("wall"))
-                Destroy(gameObject);
-
-
         }
-        
+        if (collision.gameObject.CompareTag("wall"))
+            Destroy(gameObject);
+
     }
 }
