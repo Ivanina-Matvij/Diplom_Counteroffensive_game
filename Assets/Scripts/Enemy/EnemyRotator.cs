@@ -31,11 +31,14 @@ public class EnemyRotator: MonoBehaviour
         {
             Vector3 directionToPlayer = _target.position - transform.position;
 
-            Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+            Vector3 horizontalDirectionToPlayer = new Vector3(directionToPlayer.x, 0f, directionToPlayer.z);
+
+            Quaternion targetRotation = Quaternion.LookRotation(horizontalDirectionToPlayer, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
     }
+
 
 
 }

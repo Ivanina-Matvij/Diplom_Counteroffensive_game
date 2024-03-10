@@ -426,7 +426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5533558469819085657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8eb9e0e2a6e7881438d4fcb538ba4497, type: 3}
   m_Name: 
@@ -434,7 +434,7 @@ MonoBehaviour:
   _enemyInput: {fileID: 3850862996325058000}
   _fire: {fileID: 5418993128491890056}
   player: {fileID: 9006627121210977051, guid: ecc3fa7697e716e4cba35edaa43a6831, type: 3}
-  rotationSpeed: 30
+  rotationSpeed: 8
 --- !u!65 &1524141641268483679
 BoxCollider:
   m_ObjectHideFlags: 0
