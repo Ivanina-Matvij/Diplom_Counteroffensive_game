@@ -5,20 +5,24 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private Transform _gunPointer;
-    [SerializeField] private Transform _player;
-    [SerializeField] private float _stoppingDistance;
-    [SerializeField] private float _retreatDistance;
     [SerializeField] private float speed;
-
-
-    void Start()
-    {
-    }
 
     void Update()
     {
+        EnemyMove();
+    }
 
+    private void EnemyMove()
+    {
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("wall"))
+        {
+            transform.Rotate(Vector3.up * 90f);
+        }
     }
 
 
