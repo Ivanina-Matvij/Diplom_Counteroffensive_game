@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1641207039}
-  offset: {x: 0, y: 17, z: -8}
+  offset: {x: 0, y: 17, z: -10}
   smoothTime: 3
 --- !u!1001 &1225040950
 PrefabInstance:
