@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerFire.cs" />
     <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyRotator.cs" />
+    <Compile Include="Assets\GameOverScreen.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
     <Compile Include="Assets\Flag\PlayerOnFlag.cs" />

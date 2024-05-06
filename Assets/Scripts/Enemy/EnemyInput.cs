@@ -20,7 +20,6 @@ public class EnemyInput : MonoBehaviour
 
         if (Physics.Raycast(ray, out hitInfo))
         {
-            Debug.Log(gameObject);
             if (hitInfo.collider.gameObject.CompareTag("Player"))
             {
                 enemyFire.FireTank();

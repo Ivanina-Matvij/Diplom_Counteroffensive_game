@@ -23,6 +23,9 @@ public class EnemyRotator: MonoBehaviour
         {
             RotateTowardsPlayer();
         }
+        else if(_target == null){
+            _target = null;
+        }
     }
 
     private void RotateTowardsPlayer()
