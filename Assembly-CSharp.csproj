@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Rotator.cs" />
     <Compile Include="Assets\Scripts\LoadMap.cs" />
+    <Compile Include="Assets\EnemyTracker.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyFire.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Scripts\Damage.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\GameOverScreen.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Flag\PlayerOnFlag.cs" />
   </ItemGroup>
   <ItemGroup>

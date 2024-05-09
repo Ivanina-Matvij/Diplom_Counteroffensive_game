@@ -1,47 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerOnFlag : MonoBehaviour
 {
-    private bool isOnCircle = false;
+    private bool isOnFlag = false;
     private float timer = 0f;
+    private const float targetTime = 5f; 
 
     private void Update()
     {
-        if (isOnCircle)
+        if (isOnFlag)
         {
             timer += Time.deltaTime;
-
-            if (timer >= 5f)
+            if (timer >= targetTime)
             {
-                ChangeCircleColor(Color.green);
+                GameManager.Instance.PlayerWins();
             }
         }
-    }
-
-    private void ChangeCircleColor(Color color)
-    {
-        Renderer renderer = GetComponent<Renderer>();
-        renderer.material.color = color;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            isOnCircle = true;
+            isOnFlag = true;
         }
     }
 
-    // Викликається, коли гравець покидає коло
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            isOnCircle = false;
+            isOnFlag = false;
             timer = 0f;
         }
     }
-
 }
