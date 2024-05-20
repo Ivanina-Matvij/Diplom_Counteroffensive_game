@@ -1,28 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class EnemyInput : MonoBehaviour
 {
+    private EnemyFire enemyFire;
+    private Transform gunPointer;
 
-    RaycastHit hitInfo = new RaycastHit();
-
-    
+    private void Start()
+    {
+        enemyFire = GetComponent<EnemyFire>();
+        if (enemyFire != null)
+        {
+            gunPointer = enemyFire._gunPointer;
+        }
+    }
 
     private void Update()
     {
-        EnemyFire enemyFire = FindAnyObjectByType<EnemyFire>();
-        Transform gunPointer = enemyFire._gunPointer;
-        Ray ray = new Ray(gunPointer.position, gunPointer.forward);
-        Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red);
-
-        if (Physics.Raycast(ray, out hitInfo))
+        if (gunPointer != null)
         {
-            if (hitInfo.collider.gameObject.CompareTag("Player"))
+            RaycastHit[] hits = Physics.SphereCastAll(gunPointer.position, 0.5f, gunPointer.forward, 10f);
+
+            foreach (RaycastHit hit in hits)
             {
-                enemyFire.FireTank();
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    enemyFire.FireTank();
+                    break;
+                }
             }
         }
     }

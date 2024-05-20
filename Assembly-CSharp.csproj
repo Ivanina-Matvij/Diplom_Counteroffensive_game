@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Flag\SpriteBiillboard.cs" />
     <Compile Include="Assets\Flag\PlayerOnFlag.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -782,6 +783,9 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>

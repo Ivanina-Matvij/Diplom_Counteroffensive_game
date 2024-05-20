@@ -19,17 +19,20 @@ public class GameManager : MonoBehaviour
         {
             playerWon = true;
             Background_w.gameObject.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
     public void ContinueButton()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
 
     public void ButtonQuit()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
 }
