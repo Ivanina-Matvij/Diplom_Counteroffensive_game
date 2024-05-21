@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour
 
     public void ContinueButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Map");
         Time.timeScale = 1f;
     }
 
     public void ButtonQuit()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }
 

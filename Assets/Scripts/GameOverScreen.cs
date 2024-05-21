@@ -36,9 +36,21 @@ public class GameOverScreen : MonoBehaviour
         }
     }
 
-    public void RestartButton()
+    public void RestartButton1()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("GamePlay1");
+        Background.gameObject.SetActive(false);
+    }
+
+    public void RestartButton2()
+    {
+        SceneManager.LoadScene("GamePlay2");
+        Background.gameObject.SetActive(false);
+    }
+
+    public void RestartButton3()
+    {
+        SceneManager.LoadScene("GamePlay3");
         Background.gameObject.SetActive(false);
     }
 
