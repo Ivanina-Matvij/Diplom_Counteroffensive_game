@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] public float speed = 5f;
     [SerializeField] private Rigidbody _rigidbody;
 
     public float rotationSpeed = 50f;

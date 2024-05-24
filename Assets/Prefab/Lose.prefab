@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 818da507e7eacf649b9b5c79817ae47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Background: {fileID: 8428540300816014256}
+  loseScreen: {fileID: 8428540300816014256}
 --- !u!1 &1916682494259607672
 GameObject:
   m_ObjectHideFlags: 0

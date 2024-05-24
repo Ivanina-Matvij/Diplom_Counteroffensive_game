@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    [SerializeField] private GameObject winScreen;
 
-    private bool playerWon = false;
-    [SerializeField] private GameObject Background_w;
+    public bool playerDied = false;
 
     void Awake()
     {
@@ -15,12 +15,8 @@ public class GameManager : MonoBehaviour
 
     public void PlayerWins()
     {
-        if (!playerWon)
-        {
-            playerWon = true;
-            Background_w.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-        }
+        winScreen.gameObject.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void ContinueButton()
@@ -34,5 +30,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }
-
 }
