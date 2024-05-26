@@ -2,19 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadGame : MonoBehaviour
 {
-    public void OnLoadGame1()
+    public Button[] buttons;
+
+    private void Awake()
     {
-        SceneManager.LoadScene("GamePlay1");
+        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        Debug.Log("UnlockedLevels: " + unlockedLevels);
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
+
+        int maxLevels = Mathf.Min(unlockedLevels, buttons.Length);
+        for (int i = 0; i < maxLevels; i++)
+        {
+            buttons[i].interactable = true;
+        }
     }
-    public void OnLoadGame2()
+    public void OnLoadGame(int LevelId)
     {
-        SceneManager.LoadScene("GamePlay2");
+        string LevelName = "GamePlay" + LevelId;
+        SceneManager.LoadScene(LevelName);
     }
-    public void OnLoadGame3()
-    {
-        SceneManager.LoadScene("GamePlay3");
-    }
+
 }

@@ -368,6 +368,7 @@
 "Assets/Scripts/LoadGame.cs"
 "Assets/Scripts/LoadMap.cs"
 "Assets/Scripts/LoadMenu.cs"
+"Assets/Scripts/resetSave.cs"
 -langversion:9.0
 
 /deterministic

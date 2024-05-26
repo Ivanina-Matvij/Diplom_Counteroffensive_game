@@ -17,9 +17,19 @@ public class GameManager : MonoBehaviour
         winScreen.gameObject.SetActive(true);
         Time.timeScale = 0f;
     }
+    void UnlockNewLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+            PlayerPrefs.Save();
+        }
+    }
 
     public void ContinueButton()
     {
+        UnlockNewLevel();
         SceneManager.LoadScene("Map");
         Time.timeScale = 1f;
     }
