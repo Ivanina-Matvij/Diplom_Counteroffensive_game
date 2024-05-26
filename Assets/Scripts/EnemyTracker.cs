@@ -7,7 +7,6 @@ public class EnemyTracker : MonoBehaviour
     void Start()
     {
         enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        Debug.Log(enemiesRemaining);
     }
 
     void Update()
@@ -22,7 +21,7 @@ public class EnemyTracker : MonoBehaviour
 
     private void Win()
     {
-        if (enemiesRemaining <= 0 && !GameManager.Instance.playerDied)
+        if (enemiesRemaining <= 0 )
         {
             GameManager.Instance.PlayerWins();
         }

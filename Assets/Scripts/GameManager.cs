@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [SerializeField] private GameObject winScreen;
 
-    public bool playerDied = false;
 
     void Awake()
     {

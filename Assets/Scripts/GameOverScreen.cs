@@ -30,7 +30,6 @@ public class GameOverScreen : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.playerDied = true;
             loseScreen.SetActive(true);
             Time.timeScale = 0f;
         }

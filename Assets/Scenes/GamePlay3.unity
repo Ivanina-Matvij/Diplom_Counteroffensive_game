@@ -518,6 +518,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 4748762665431452960, guid: e0951ff4f6fad52429fc431e7882d0ff, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 284739780}
+    - target: {fileID: 4748762665431452960, guid: e0951ff4f6fad52429fc431e7882d0ff, type: 3}
       propertyPath: Background_w
       value: 
       objectReference: {fileID: 284739780}
