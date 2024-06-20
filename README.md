@@ -9,4 +9,4 @@
 * Unity
 * Visual Studio
 ## Опублікований продукт
-Інсталяційний пакет створеної гри можна завантажити з магазину [intch.io]([http://itch.io](https://matvij-ivanina.itch.io/3d))
+Інсталяційний пакет створеної гри можна завантажити з магазину [intch.io]([http://itch.io](https://matvij-ivanina.itch.io/3d)
